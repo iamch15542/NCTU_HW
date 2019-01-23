@@ -29,7 +29,7 @@ int main()
         arr[u].push_back(make_pair(v, w));
     }
     Bellman_Ford(n);
-    double ans = numeric_limits<double>::infinity();;
+    double ans = numeric_limits<double>::infinity();
     for(int i = 0; i <= n; ++i)
     {
         if(rec[n][i] == numeric_limits<double>::infinity())

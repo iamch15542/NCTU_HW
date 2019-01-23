@@ -27,12 +27,14 @@ void run()
 {
     ll tmp[n*n], g = 0, tmp1[n*n];
     for(int i = 0; i < n; ++i)
+    {
         for(int j = 0; j < n; ++j)
         {
             tmp[g] = arr[0][i]+arr[1][j];
             tmp1[g] = arr[2][i]+arr[3][j];
             g++;
         }
+    }
     sort(tmp, tmp + g);
     sort(tmp1, tmp1 + g);
     for(int i = 0; i < g; ++i)
